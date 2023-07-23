@@ -1,0 +1,105 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: 'Courier';
+  color: rgb(255, 255, 255);
+  font-size: 100%;
+  line-height: 85%;
+  cursor: crosshair;
+}
+
+canvas{
+  display: block;
+}
+
+.nameContainer{
+  display: flex;
+  align-items: left;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding-bottom: 1vh;
+  padding-left: 1vw;
+}
+.footerContentContainer{
+ text-align: right;
+}
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+}
+
+.content{
+  padding-top: 1vh;
+  padding-right: 1vw;
+  float: right;
+  text-decoration: none;
+  color: white;
+  z-index: 100;
+  display: none;
+}
+
+.navbarContentContainer{
+  justify-content: space-between;
+ }
+
+ .content1{
+  align-items: right;
+  display: none;
+  }
+
+.content2{
+align-items: right;
+display: none;
+}
+
+.navbar{
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  top: 0;
+}
+
+.playContainer{
+  position: absolute;
+  padding-left: 1vw;
+  padding-top: 1vh;
+}
+
+.play{
+  color: black;
+}
+
+#about{
+  position: absolute;
+  color: black;
+  display: none;
+  width: 100%;
+  background-color: red;
+  height: 100%;
+  z-index: 10000;
+}
+
+.letral{
+  width: 20%;
+  position: absolute;
+  right: 0;
+  padding-right:1vw ;
+  text-align: right;
+}
+
+.tinyFont{
+  font-size: 70%;
+}
+
+.credits{
+  position: absolute;
+  bottom: 0;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+}
