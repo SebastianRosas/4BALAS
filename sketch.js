@@ -20,7 +20,7 @@ function setup() {
     ['./video/clareando.mp4']
   );
   video.size(windowWidth/20,windowHeight/20);
-    video.volume(0);
+    video.volume();
     video.hide();
   asciiDiv = createDiv();
   asciiDiv.position(400,70);
@@ -53,7 +53,6 @@ function mousePressed() {
     document.getElementById('hugoSantiago').style.display = 'none'; 
   } else {
     song.play();
-    video.loop();
     video.play();
     clicksound.play()
     background(0, 0, 0);
@@ -71,7 +70,7 @@ function windowResized() {
   if(windowWidth < 1280 && windowHeight< 800 ) {
     video.size(windowWidth/25,windowHeight/25);
 } else if(windowWidth < 900 && windowHeight< 400 ) {
-  asciiDiv.position(20,0);
+  asciiDiv.position(20,10);
   video.size(windowWidth/50,windowHeight/50);
 } else {
   video.size(windowWidth/20,windowHeight/20);
